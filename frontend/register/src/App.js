@@ -16,16 +16,18 @@ function App() {
     // getRegister();
     console.log(process.env.REACT_APP_BACKEND_URL);
     // sample data list of users
-    setUsers([
-      {
-        name: 'John Doe',
-        email: 'john@gmail.com',
-      },
-      {
-        name: 'Jane Doe here',
-        email: 'here@gmail.com',
-      }
-    ]);
+    // setUsers([
+    //   {
+    //     name: 'John Doe',
+    //     email: 'john@gmail.com',
+    //   },
+    //   {
+    //     name: 'Jane Doe here',
+    //     email: 'here@gmail.com',
+    //   }
+    // ]);
+
+    getRegister();
   }, []);
 
   return (
