@@ -1,0 +1,11 @@
+schemaVersion: "1.1"
+endpoints:
+    - name: register-backend
+      displayName: register-backend
+      service:
+        basePath: /
+        port: 3001
+      type: REST
+      networkVisibilities:
+        - Public
+      schemaFilePath: .
