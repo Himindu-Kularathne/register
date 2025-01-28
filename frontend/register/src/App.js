@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from 'react'; 
 import './App.css'; // Import the CSS file
+  // import url from public/config.js
+  // import config from './config';
+import REACT_APP_BACKEND_URL from './config';
 
 function App() {
   const [users, setUsers] = useState([]);
 
   // get register name
   const getRegister = async () => {
-    const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/register`);
+  
+
+    const response = await fetch(`${REACT_APP_BACKEND_URL}/register`);
     const data = await response.json();
     setUsers(data);
   }
